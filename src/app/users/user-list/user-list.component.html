@@ -1,0 +1,21 @@
+<div class="container">
+
+  <h1 class="mt-2">Users</h1>
+
+  <button class="btn btn-dark mt-2 mb-2" [routerLink]="['/users/add']"> Add User</button>
+
+  <table class="table mt-4">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Role</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{user.name}}</td>
+        <td>{{user.role}}</td>
+      <tr>
+    </tbody>
+  </table>
+</div>
